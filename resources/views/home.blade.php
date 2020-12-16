@@ -265,7 +265,7 @@
                 <ul class="list-group">
                     <li class="list-group-item">
                         <p>Contact</p>
-                        <p>+632.8.865.5600</p>
+                        <p>+632.8.865.5600sdfg</p>
                     </li>
                     <li class="list-group-item">
                         <p>Email</p>
