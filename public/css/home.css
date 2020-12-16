@@ -1,0 +1,27 @@
+body {
+
+    background-color: white;
+
+}
+
+.list-group-item {
+
+    background-color: transparent;
+    border:0;
+    padding-left:0;
+ 
+}
+
+.shade-1 {
+
+    height:20px;
+    background-color:gray;
+
+}
+
+.shade-2 {
+
+    height:25px;
+    background-color:darkgrey;
+    
+}
