@@ -102,7 +102,7 @@
             </div>
         </div>
 
-        <div class="col-lg-6 my-auto pl-5">
+        <div class="col-lg-6 my-auto">
                 <h4 class="pc-text-medium pc-text-blue">Who we are</h4>
                 <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
                 <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
@@ -112,18 +112,18 @@
     <!-- end of who we are -->
 
     <!-- start of csr -->
-    <div class="row h-100">
+    <div class="row h-100 pt-4 pb-5">
         <div class="col-lg-6 my-auto">
-            <div class="csr-spacer">
                 <h4 class="pc-text-medium pc-text-blue">CSR</h4>
                 <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
                 <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
-            </div>  
         </div>
 
         <div class="col-lg-6 my-auto">
             <div class="csr-spacer">
-                <img src="{{asset('images/csr.png')}}" class="img-fluid" alt="Responsive image">
+                <div class="text-center">
+                    <img src="{{asset('images/csr.png')}}" class="img-fluid" width="375" alt="Responsive image">
+                </div>
             </div>
         </div>
     </div>
@@ -133,69 +133,100 @@
 
 <!-- End of home container -->
 
-    <!-- start of who we are  -->
-    <div class="bg-primary pt-4 mt-4">
+    <!-- start of circular   -->
+    <div class="pc-bg-blue pt-5 pb-5">
         <div class="container">
-            <div class="row">
+            <div class="row h-100">
                 <div class="col-lg-6">
-                    <img src="{{asset('images/circulars.png')}}" class="img-fluid" alt="Responsive image">
+                    <div class="text-center">
+                        <img src="{{asset('images/circulars.png')}}" class="img-fluid" alt="Responsive image">
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="csr-spacer">
-                        <h4 class="pc-text-medium">Circulars</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
-                        <button class="btn btn-light">Learn More</button>
+                    <div class="circular-spacer">
+                        <h4 class="pc-text-medium text-white">Circulars</h4>
+                        <p class="text-white mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
+                        <button class="btn learn-btn pc-btn-white mt-3">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end of who we are -->
+    <!-- end of circular  -->
 
-    <div class="container mt-4">
+    <!-- start of our members -->
+    <div class="container pt-5 pb-5">
         <div class="text-center">
-            <h4>Our Members</h4>
+            <h4 class="pc-text-medium pc-text-blue">Our Members</h4>
             <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam</p>
         </div>
 
-        <div class="row row-cols-4">
-            <div class="col"><img src="{{asset('images/member-logos/1.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/2.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/3.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/4.jpg')}}" class="img-fluid"alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/5.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/6.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/7.jpg')}}" class="img-fluid" alt=""></div>
-            <div class="col"><img src="{{asset('images/member-logos/8.jpg')}}" class="img-fluid" alt=""></div>
+        <div class="row h-100 row-cols-4 mt-5">
+            <div class="col border-right border-bottom">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/1.jpg')}}" class="img-fluid img-members" alt="">
+                </div>
+            </div>
+            <div class="col border-right border-bottom">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/2.jpg')}}" class="img-fluid img-members" alt=""></div>
+                </div>
+            <div class="col border-right border-bottom">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/3.jpg')}}" class="img-fluid img-members" alt=""></div>
+                </div>    
+            <div class="col border-bottom">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/4.jpg')}}" class="img-fluid img-members" alt=""></div>    
+                </div>    
+            <div class="col border-right">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/5.jpg')}}" class="img-fluid img-members" alt=""></div>
+                </div>    
+            <div class="col border-right">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/6.jpg')}}" class="img-fluid img-members" alt=""></div> 
+                </div>    
+            <div class="col border-right">
+                <div class="text-center">
+                    <img src="{{asset('images/member-logos/7.jpg')}}" class="img-fluid img-members" alt=""></div> 
+                </div>    
+            <div class="col">
+                    <div class="text-center">
+                        <img src="{{asset('images/member-logos/8.jpg')}}" class="img-fluid img-members" alt="">
+                    </div>
+            </div>
         </div>
 
         <div class="text-center">
-            <button type="button" class="btn btn-primary">Learn More</button>
+            <button type="button" class="btn learn-btn pc-btn-blue mt-5">Learn More</button>
         </div>
     </div>
 
     <!-- start of join us-->
-    <div class="bg-primary pt-4 mt-4">
+    <div class="pc-bg-blue pt-5 pt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-center">
-                        <h4>Talk to Us</h4>
-                        <p>+632.8.865.5600</p>
+            <div class="row h-100">
+                <div class="col-lg-6 my-auto">
+                    <div class="joinus-spacer">
+                        <div class="text-center">
+                            <h3 class="pc-text-medium text-white">Talk to Us</h3>
+                            <p class="text-white mt-3">+632.8.865.5600</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <h4>Join Us</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <button class="btn btn-light">Be a Member</button>
+                        <h3 class="pc-text-medium text-white">Join Us</h3>
+                        <ul class="list-unstyled">
+                            <li class="mt-3">
+                                <button class="btn learn-btn btn-light pc-text-bold">Be a Member</button>
                             </li>
-                            <li class="list-group-item">
-                                <button class="btn btn-light">Be a Volunteer</button>
+                            <li class="mt-3">
+                                <button class="btn learn-btn btn-light pc-text-bold">Be a Volunteer</button>
                             </li>
-                            <li class="list-group-item"> 
-                                <button class="btn btn-light">Donate a Medicine/ Cash</button>
+                            <li class="mt-3"> 
+                                <button class="btn learn-btn btn-light pc-text-bold">Donate a Medicine/ Cash</button>
                             </li>
                         </ul>
                     </div>
@@ -209,7 +240,7 @@
  <!-- end of join us -->
 
  <!-- start of footer -->
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
             <div class="col-lg-6">
                 <a href="#"><img src="{{asset('images/phapcares-logo.jpg')}}" alt="" height="45"></a>

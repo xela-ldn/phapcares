@@ -1,6 +1,9 @@
 :root {
     --pc-blue:#00549B;
     --pc-green:#02954A;
+    --pc-shade-1:#758BAF;
+    --pc-shade-2:#BEC9D9;
+
 }
 
 @font-face {
@@ -85,6 +88,47 @@ background-color: var(--pc-blue);
 border-color: var(--pc-blue);
 
 }
+
+.pc-btn-blue {
+
+color: #fff;
+background-color: var(--pc-blue);
+border-color: var(--pc-blue);
+font-family: montserrat_bold;
+
+
+}
+
+.pc-btn-blue:hover {
+
+color: var(--pc-blue);
+border-color: var(--pc-blue);
+background-color: #fff;
+
+}
+  
+
+
+.pc-btn-white {
+
+color: var(--pc-blue);
+border-color:  #fff;
+background-color: #fff;
+font-family: montserrat_bold;
+
+}
+
+.pc-btn-white:hover {
+
+color: #fff;
+background-color: var(--pc-blue);
+border-color: #fff;
+
+}
+
+
+
+
 
 
 

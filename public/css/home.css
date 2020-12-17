@@ -11,14 +11,14 @@
 .shade-1 {
 
     height:20px;
-    background-color:gray;
+    background-color: var(--pc-shade-1);
 
 }
 
 .shade-2 {
 
-    height:25px;
-    background-color:darkgrey;
+    height:35px;
+    background-color: var(--pc-shade-2);
     
 }
 
@@ -29,20 +29,39 @@
 
 
 }
+
 .whoweare-spacer {
     /* background-color:green; */
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:4rem;
+    padding-bottom:4rem;
 
 }
 
 .csr-spacer {
-    /* background-color:green; */
-    padding-top:100px;
-    padding-bottom:100px;
-    padding-right:50px;
-   
     
+    /* padding-top:2rem; */
+    padding-bottom:2rem;
+
+}
+
+.circular-spacer {
+    
+    padding-top:4rem;
+    padding-bottom:4rem;
+
+}
+
+.joinus-spacer {
+    
+    padding-top:6rem;
+    padding-bottom:6rem;
+
+}
+
+.img-members {
+
+    width:160px;
+
 }
 
 
