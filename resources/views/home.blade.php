@@ -48,83 +48,87 @@
 
 
 <!-- start of home container -->
-<div class="container mt-4">
-    <div class="d-flex bd-highlight">
-        <h3>News</h3>
+<div class="container pt-4">
+    <div class="d-flex bd-highlight pb-4">
+        <h3 class="pc-text-medium pc-text-blue">News</h3>
     </div>
-
+    <!-- start of news -->
     <div class="row">
         <div class="col-md-3">
-            <div class="card" >
+            <div class="card shadow" >
                 <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card" >
+            <div class="card shadow" >
                 <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card" >
+            <div class="card shadow" >
                 <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card" >
+            <div class="card shadow" >
                 <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="d-flex bd-highlight mt-3">
-        <a href="#">See More Resources</a>
+    <div class="d-flex bd-highlight mt-5">
+        <a class="pc-text-blue pc-text-bold" href="#">See More Resources</a>
+    </div>
+    <!-- end of news -->
+    <!-- start of who we are -->
+    <div class="row h-100 pt-5 pb-5">
+        <div class="col-lg-6 my-auto">
+            <div class="whoweare-spacer">
+                <div class="text-center">
+                    <img src="{{asset('images/whoweare.png')}}" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 my-auto pl-5">
+                <h4 class="pc-text-medium pc-text-blue">Who we are</h4>
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
+                <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
+        </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-lg-6">
-            <img src="{{asset('images/whoweare.png')}}" class="img-fluid" alt="Responsive image">
+    <!-- end of who we are -->
+
+    <!-- start of csr -->
+    <div class="row h-100">
+        <div class="col-lg-6 my-auto">
+            <div class="csr-spacer">
+                <h4 class="pc-text-medium pc-text-blue">CSR</h4>
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
+                <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
+            </div>  
         </div>
 
-        <div class="col-lg-6">
-        <h4>Who we are</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, 
-         sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
-            <button class="btn btn-primary">Learn More</button>
+        <div class="col-lg-6 my-auto">
+            <div class="csr-spacer">
+                <img src="{{asset('images/csr.png')}}" class="img-fluid" alt="Responsive image">
+            </div>
         </div>
     </div>
+    <!-- end of csr -->
 
-    <div class="row mt-4">
-        <div class="col-lg-6">
-        <h4>Who we are</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, 
-         sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
-            <button class="btn btn-primary">Learn More</button>
-        </div>
-
-        <div class="col-lg-6">
-            <img src="{{asset('images/csr.png')}}" class="img-fluid" alt="Responsive image">
-        </div>
-    </div>
 </div>
 
 <!-- End of home container -->
@@ -137,10 +141,11 @@
                     <img src="{{asset('images/circulars.png')}}" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-lg-6">
-                    <h4>CSR</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, 
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
-                    <button class="btn btn-light">Learn More</button>
+                    <div class="csr-spacer">
+                        <h4 class="pc-text-medium">Circulars</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
+                        <button class="btn btn-light">Learn More</button>
+                    </div>
                 </div>
             </div>
         </div>

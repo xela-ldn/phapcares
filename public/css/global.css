@@ -1,0 +1,132 @@
+:root {
+    --pc-blue:#00549B;
+    --pc-green:#02954A;
+}
+
+@font-face {
+    font-family: montserrat_regular;
+    src: url('../fonts/MontserratRegular.ttf');
+}
+
+@font-face {
+    font-family: montserrat_medium;
+    src: url('../fonts/MontserratMedium.ttf');
+
+}
+
+@font-face {
+    font-family: montserrat_bold;
+    src: url('../fonts/MontserratBold.ttf');
+}
+
+
+body {
+
+    background-color: white;
+    font-family: montserrat_regular;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .pc-secondary-navbar {
+
+        padding-top:0;
+        padding-bottom:0;
+    
+    }
+    
+
+    .navbar-nav {
+
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+
+    }
+
+}
+
+.pc-btn-green {
+  color: #fff;
+  background-color: var(--pc-green);
+  border-color: var(--pc-green);
+}
+
+
+.pc-btn-green:hover {
+
+color: #fff;
+background-color: #2fa360;
+border-color: #2d995b;
+
+}
+
+.learn-btn {
+
+padding: 0.6rem 2rem;
+font-size: 0.7rem;
+
+}
+
+.pc-btn-outline-blue {
+
+color: var(--pc-blue);
+border-color: var(--pc-blue);
+font-family: montserrat_bold;
+
+}
+  
+.pc-btn-outline-blue:hover {
+
+color: #fff;
+background-color: var(--pc-blue);
+border-color: var(--pc-blue);
+
+}
+
+
+
+.pc-bg-blue {
+
+    background-color: var(--pc-blue);
+
+}
+
+
+
+
+.navbar a {
+
+    font-size: 13px;
+
+}
+
+.pc-text-blue {
+
+    color: var(--pc-blue);
+
+}
+
+.pc-text-regular {
+
+    font-family: montserrat_regular;
+
+}
+
+.pc-text-medium {
+
+    font-family: montserrat_medium;
+
+}
+
+.pc-text-bold {
+
+    font-family: montserrat_bold;
+
+}
+
+
+
+

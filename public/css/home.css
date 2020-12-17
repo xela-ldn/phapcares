@@ -1,8 +1,4 @@
-body {
 
-    background-color: white;
-
-}
 
 .list-group-item {
 
@@ -25,3 +21,28 @@ body {
     background-color:darkgrey;
     
 }
+
+.carousel-item {
+
+
+    max-height:500px;
+
+
+}
+.whoweare-spacer {
+    /* background-color:green; */
+    padding-top:100px;
+    padding-bottom:100px;
+
+}
+
+.csr-spacer {
+    /* background-color:green; */
+    padding-top:100px;
+    padding-bottom:100px;
+    padding-right:50px;
+   
+    
+}
+
+

@@ -7,10 +7,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/global.css')}}">
+
         @yield('custom-css')
     </head>
     <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="{{asset('images/phapcares-logo.jpg')}}" alt="" height="45"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,25 +22,22 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mr-auto">
                         </ul>
-                        <button class="btn btn-success my-2 my-sm-0" type="submit">BE A MEMBER</button>
+                        <button class="btn pc-btn-green my-2 my-sm-0" type="submit">BE A MEMBER</button>
                     </div>
                 </div>
             </nav>
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav class="navbar navbar-expand-md navbar-dark pc-bg-blue pc-secondary-navbar">
                 <div class="container">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mx-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             WHO WE ARE
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Officers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">CSR</a>
@@ -57,11 +56,9 @@
                             JOIN US
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="dropdown-item" href="#">Be a member</a>
+                            <a class="dropdown-item" href="#">Be a volunteer</a>
+                            <a class="dropdown-item" href="#">Donate medicine/cash</a>
                         </li>
                     </div>
                 </div>
