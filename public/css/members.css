@@ -1,0 +1,23 @@
+
+.card {
+
+    border-radius: 0.3rem;
+
+}
+
+.border-left-blue {
+    border-left: .25rem solid var(--pc-blue)!important;
+}
+
+@media (max-width: 768px) {  
+
+
+    .members-logo {
+
+        max-height: 100px;
+
+    }
+
+
+
+}

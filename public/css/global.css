@@ -1,6 +1,8 @@
 :root {
     --pc-blue:#00549B;
     --pc-green:#02954A;
+    --pc-light-gray:#E9E9E9;
+    --pc-gray:#4D4D4D;
     --pc-shade-1:#758BAF;
     --pc-shade-2:#BEC9D9;
 
@@ -126,20 +128,11 @@ border-color: #fff;
 
 }
 
-
-
-
-
-
-
 .pc-bg-blue {
 
     background-color: var(--pc-blue);
 
 }
-
-
-
 
 .navbar a {
 
@@ -170,6 +163,52 @@ border-color: #fff;
     font-family: montserrat_bold;
 
 }
+
+.footer-font-size {
+
+    font-size:13px;
+
+}
+
+.image-blend {
+
+    mix-blend-mode: multiply;
+
+}
+
+.ju-number-font {
+
+    font-size:20px;
+
+}
+
+.list-unstyled li{
+
+    padding-top:15px;
+
+}
+
+.list-unstyled li a{
+
+    color: var(--pc-gray);
+
+}
+
+.ic-size i {
+
+    font-size: 25px;
+
+}
+
+
+.pc-bg-gray {
+
+    background-color:var(--pc-light-gray);
+
+}
+
+
+
 
 
 

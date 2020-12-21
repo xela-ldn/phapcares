@@ -1,7 +1,10 @@
 @extends('layout.app')
-
+@section('custom-title')
+<title>PHAPCares</title>
+@stop
 @section('custom-css')
 <link rel="stylesheet" href="{{asset('css/home.css')}}">
+
 @stop
 
 @section('content')
@@ -55,41 +58,65 @@
     <!-- start of news -->
     <div class="row">
         <div class="col-md-3">
-            <div class="card shadow" >
-                <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+            <div class="card shadow">
+                <div class="img-date">
+                    <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="news-date">
+                        <p>07/06/2020</p>
+                    </div>
+                </div>
+                
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/news/news1"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card shadow" >
-                <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                <div class="img-date">
+                    <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="news-date">
+                        <p>07/06/2020</p>
+                    </div>
+                </div>
+                
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/news/news1"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card shadow" >
-                <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                <div class="img-date">
+                    <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="news-date">
+                        <p>07/06/2020</p>
+                    </div>
+                </div>
+                
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/news/news1"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card shadow" >
-                <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                <div class="img-date">
+                    <img src="{{asset('images/news1.jpg')}}" class="card-img-top" alt="...">
+                    <div class="news-date">
+                        <p>07/06/2020</p>
+                    </div>
+                </div>
+                
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/news/news1"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="d-flex bd-highlight mt-5">
-        <a class="pc-text-blue pc-text-bold" href="#">See More Resources</a>
+        <a class="pc-text-blue pc-text-bold" href="/news">See More Resources</a>
     </div>
     <!-- end of news -->
     <!-- start of who we are -->
@@ -102,8 +129,8 @@
             </div>
         </div>
 
-        <div class="col-lg-6 my-auto">
-                <h4 class="pc-text-medium pc-text-blue">Who we are</h4>
+        <div class="col-lg-6 my-auto whoweare-text-content">
+                <h3 class="pc-text-regular pc-text-blue">Who we are</h3>
                 <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
                 <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
         </div>
@@ -113,8 +140,8 @@
 
     <!-- start of csr -->
     <div class="row h-100 pt-4 pb-5">
-        <div class="col-lg-6 my-auto">
-                <h4 class="pc-text-medium pc-text-blue">CSR</h4>
+        <div class="col-lg-6 my-auto csr-text-content">
+                <h3 class="pc-text-regular pc-text-blue">PHAPCares Kalinga Program</h3>
                 <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
                 <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
         </div>
@@ -144,7 +171,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="circular-spacer">
-                        <h4 class="pc-text-medium text-white">Circulars</h4>
+                        <h3 class="pc-text-regular text-white">Circulars</h3>
                         <p class="text-white mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
                         <button class="btn learn-btn pc-btn-white mt-3">Learn More</button>
                     </div>
@@ -157,7 +184,7 @@
     <!-- start of our members -->
     <div class="container pt-5 pb-5">
         <div class="text-center">
-            <h4 class="pc-text-medium pc-text-blue">Our Members</h4>
+            <h3 class="pc-text-regular pc-text-blue">Our Members</h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam</p>
         </div>
 
@@ -199,36 +226,36 @@
         </div>
 
         <div class="text-center">
-            <button type="button" class="btn learn-btn pc-btn-blue mt-5">Learn More</button>
+            <a href="/members" class="btn learn-btn pc-btn-blue mt-5">Learn More</a>
         </div>
     </div>
 
     <!-- start of join us-->
-    <div class="pc-bg-blue pt-5 pt-5">
+    <div class="pc-bg-blue pt-5">
         <div class="container">
             <div class="row h-100">
                 <div class="col-lg-6 my-auto">
-                    <div class="joinus-spacer">
                         <div class="text-center">
-                            <h3 class="pc-text-medium text-white">Talk to Us</h3>
-                            <p class="text-white mt-3">+632.8.865.5600</p>
+                            <h2 class="pc-text-regular text-white">Talk to Us</h2>
+                            <p class="text-white mt-3 ju-number-font">+632.8.865.5600</p>
                         </div>
                     </div>
-                </div>
                 <div class="col-lg-6">
-                    <div class="text-center">
-                        <h3 class="pc-text-medium text-white">Join Us</h3>
-                        <ul class="list-unstyled">
-                            <li class="mt-3">
-                                <button class="btn learn-btn btn-light pc-text-bold">Be a Member</button>
-                            </li>
-                            <li class="mt-3">
-                                <button class="btn learn-btn btn-light pc-text-bold">Be a Volunteer</button>
-                            </li>
-                            <li class="mt-3"> 
-                                <button class="btn learn-btn btn-light pc-text-bold">Donate a Medicine/ Cash</button>
-                            </li>
-                        </ul>
+                    <div class="joinus-spacer">
+                        <div class="text-center">
+                            <h2 class="pc-text-regular text-white">Join Us</h2>
+                            <ul class="list-unstyled">
+                                <li class="mt-3">
+                                    <button class="btn learn-btn btn-light pc-text-bold">Be a Member</button>
+                                </li>
+                                <li class="mt-3">
+                                    <button class="btn learn-btn btn-light pc-text-bold">Be a Volunteer</button>
+                                </li>
+                                <li class="mt-3"> 
+                                    <button class="btn learn-btn btn-light pc-text-bold">Donate a Medicine/ Cash</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,86 +266,8 @@
     <div class="shade-2"></div>
  <!-- end of join us -->
 
- <!-- start of footer -->
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <a href="#"><img src="{{asset('images/phapcares-logo.jpg')}}" alt="" height="45"></a>
-            </div>
-            <div class="col-lg-6">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram-square"></i>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-3">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="#">Who we are</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">History</a>
-                    </li>
-                    <li class="list-group-item"> 
-                        <a href="#">Officers</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="#">CSR</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">News</a>
-                    </li>
-                    <li class="list-group-item"> 
-                        <a href="#">Circulars</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="#">Join Us</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Be a member</a>
-                    </li>
-                    <li class="list-group-item"> 
-                        <a href="#">Be a Volunteer</a>
-                    </li>
-                    <li class="list-group-item"> 
-                        <a href="#">Donate Medicine/ Cash</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <p>Contact</p>
-                        <p>+632.8.865.5600sdfg</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Email</p>
-                        <p>phap7346@phap.org.ph</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Address</p>
-                        <p>Unit 502 One Corporate Plaza,845 Arnaiz Avenue, Makati City, Philippines</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <footer>
-            © Copyright 2021. PHAPCares Foundation. All Rights Reserved
-        </footer>
-    </div>
+    
 
     <!-- end of footer -->
    

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AppController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +21,25 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/news',function() {
+
+    return view('news');
+
+});
+
+Route::get('/news/news1',function() {
+
+    return view('news-pages/news1');
+
+});
+
+Route::get('/members', function(){
+
+    return view('members');
+    
+});
+
+
+// Route::get('/news', 'AppController@navigateNews')->name('news');
+// Route::get('/news',[AppController::class, 'navigateNews'])->name('news');

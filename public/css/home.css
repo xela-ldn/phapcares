@@ -1,4 +1,23 @@
+.img-date {
+    position: relative;
+}
 
+.news-date{
+
+    position: absolute;
+    bottom: 0;
+    padding: 0.4rem 1.7rem 0.4rem 1.7rem;
+    background-color: var(--pc-blue);
+
+}
+
+.news-date p {
+    font-size:13px;
+    color:white;
+    padding: 0;
+    margin: 0;
+    
+}
 
 .list-group-item {
 
@@ -53,8 +72,8 @@
 
 .joinus-spacer {
     
-    padding-top:6rem;
-    padding-bottom:6rem;
+    padding-top:4rem;
+    padding-bottom:4rem;
 
 }
 
@@ -64,4 +83,24 @@
 
 }
 
+
+
+
+
+
+@media (min-width: 992px) {  
+
+    .csr-text-content {
+
+        padding-left:5rem;
+    
+    }
+
+    .whoweare-text-content {
+
+        padding-left:5rem;
+
+    }
+
+}
 
