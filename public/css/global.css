@@ -164,6 +164,18 @@ border-color: #fff;
 
 }
 
+.pc_text_bold {
+
+    font-family: montserrat_bold;
+
+}
+
+.pc_text_regular {
+
+    font-family: montserrat_regular;
+
+}
+
 .footer-font-size {
 
     font-size:13px;
@@ -207,6 +219,15 @@ border-color: #fff;
 
 }
 
+
+.nav-wrapper {
+
+    background-color: var(--pc-light-gray);
+    padding-left:20px;
+    border-radius:0.25rem;
+    height:100%;
+    
+}
 
 
 

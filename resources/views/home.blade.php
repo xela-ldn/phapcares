@@ -1,10 +1,14 @@
 @extends('layout.app')
 @section('custom-title')
-<title>PHAPCares</title>
+PHAPCares
 @stop
 @section('custom-css')
 <link rel="stylesheet" href="{{asset('css/home.css')}}">
 
+@stop
+
+@section('sidebar')
+    
 @stop
 
 @section('content')
@@ -132,7 +136,7 @@
         <div class="col-lg-6 my-auto whoweare-text-content">
                 <h3 class="pc-text-regular pc-text-blue">Who we are</h3>
                 <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
-                <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
+                <a href="/whoweare/history" class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</a>
         </div>
     </div>
 
@@ -140,19 +144,20 @@
 
     <!-- start of csr -->
     <div class="row h-100 pt-4 pb-5">
-        <div class="col-lg-6 my-auto csr-text-content">
-                <h3 class="pc-text-regular pc-text-blue">PHAPCares Kalinga Program</h3>
-                <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
-                <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
-        </div>
-
-        <div class="col-lg-6 my-auto">
+        <div class="col-lg-6 order-lg-2 my-auto">
             <div class="csr-spacer">
                 <div class="text-center">
                     <img src="{{asset('images/csr.png')}}" class="img-fluid" width="375" alt="Responsive image">
                 </div>
             </div>
         </div>
+        <div class="col-lg-6 order-lg-1 my-auto csr-text-content">
+                <h3 class="pc-text-regular pc-text-blue">PHAPCares Kalinga Program</h3>
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adip- iscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi envm dolor sit amet, cons ec- tetuer adipiscing elit, sed diam nonum</p>
+                <button class="btn pc-btn-outline-blue learn-btn mt-2">Learn More</button>
+        </div>
+
+
     </div>
     <!-- end of csr -->
 

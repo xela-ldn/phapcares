@@ -1,15 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        @yield('custom-title')
+        <title>@yield('custom-title')</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/global.css')}}">
 
         @yield('custom-css')
+
     </head>
     <body>
             <nav class="navbar navbar-expand-md navbar-light bg-white">
@@ -36,8 +38,8 @@
                             WHO WE ARE
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">History</a>
-                            <a class="dropdown-item" href="#">Officers</a>
+                            <a class="dropdown-item" href="/whoweare/history">History</a>
+                            <a class="dropdown-item" href="/whoweare/officers">Officers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">PHAPCARES KALINGA PROGRAM</a>
@@ -64,9 +66,15 @@
                 </div>
             </nav>
 
+            @yield('breadcrumb')
+
+            @section('sidebar')
+                <div class="container">
+                    @yield('sidebar-content')
+                </div>
+            @show
+
             @yield('content')
-            
-        
                         <!-- start of footer -->
             <div class="pc-bg-gray footer-font-size">
                 <div class="container pt-5">
@@ -84,7 +92,7 @@
                         <div class="col-lg-3">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a class="pc-text-bold">Who we are</a>
+                                    <a href="/whoweare" class="pc-text-bold">Who we are</a>
                                 </li>
                                 <li>
                                     <a href="#">History</a>
@@ -153,6 +161,7 @@
     </body>
 
         <script src="{{asset('js/app.js')}}"></script>
+
         @yield('custom-js')
 
 </html>

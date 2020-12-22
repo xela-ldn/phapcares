@@ -12,7 +12,8 @@
 
 @stop
 
-
+@section('sidebar')
+@endsection
 
 @section('content')
 <div class="container pb-3">

@@ -41,5 +41,30 @@ Route::get('/members', function(){
 });
 
 
+// Route::get('/whoweare/{page}/', function($page){
+
+//     $selected_page = $page; 
+    
+
+//     return view('whoweare', compact('selected_page'));
+
+//     // echo $selected_page;
+    
+//     // 
+    
+// });
+
+Route::get('/whoweare/{page}', function($page){
+
+    $selected_page = $page;
+    
+
+    return view('whoweare', compact('selected_page'));
+
+    
+});
+
 // Route::get('/news', 'AppController@navigateNews')->name('news');
-// Route::get('/news',[AppController::class, 'navigateNews'])->name('news');
+// Route::get('/whoweare/history',[AppController::class, 'whoweare_history'])->name('history');
+
+

@@ -13,5 +13,8 @@ class AppController extends Controller
         return view('news');
         
     }
+
+
+
     
 }
